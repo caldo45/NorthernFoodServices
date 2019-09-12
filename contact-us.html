@@ -19,7 +19,7 @@
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <!-- <link href="lib/animate/animate.min.css" rel="stylesheet"> -->
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
@@ -46,24 +46,24 @@
         <div class="logo float-left">
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-          <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" class="header-logo"></a>
+          <a href="#intro" class="scrollto"><img id="logo-nfs"  src="img/logo-border-01.png" alt="" class="header-logo"></a>
         </div>
   
         <nav class="main-nav float-right d-none d-lg-block">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#about">Consultant Profile</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Food Safety & QM</a></li>
-            <li><a href="#team">Interim Technical Management</a></li>
-            <li><a href="#team">Auditing </a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="consultantProfile.html">Consultant Profile</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="foodSafetyQualityManagementSystems.html">Food Safety & Quality <br> Management Systems </a></li>
+              <li><a href="allergenControl.html">Allergen Control & Management</a></li>
+              <li><a href="auditing.html">Auditing </a></li>
+              <li class="active"><a href="contact-us.html">Contact Us</a></li>
           </ul>
         </nav><!-- .main-nav -->
         
       </div>
     </header><!-- #header -->
-  <section id="contact" class="mt-5">
+  <section id="contact" style="margin-top:150px;">
         <div class="container-fluid mb-5">
   
           <div class="section-header">
@@ -72,12 +72,12 @@
   
           <div class="row wow fadeInUp">
   
-            <div class="col-lg-6">
+            <!-- <div class="col-lg-6">
               <div class="map mb-4 mb-lg-0">
                 <iframe src="https://maps.google.com/maps?q=belfast&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
               </div>
-            </div>
-  
+            </div> -->
+            <div class="col-lg-3"></div>
             <div class="col-lg-6">
               <div class="row">
                 <div class="col-md-5 info">
@@ -95,7 +95,7 @@
               </div>
   
               <div class="form">
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
                 <div id="errormessage"></div>
                 <form action="" method="post" role="form" class="contactForm">
                   <div class="form-row">
@@ -109,14 +109,27 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
+                      <label for="sel1">Topic</label>
+                      <select class="form-control contact-form-input" id="sel1" placeholder="Your Email">
+                        <option id="foodSafetyAndHACCP">Food Safety & HACCP</option>
+                        <option id="foodLegislation">Food Legislation & Regulatory Compliance</option>
+                        <option id="foodSecurity">Food Security, Authenticity & Supply Chain Integrity</option>
+                        <option id="environmentalAndOperationalHygiene">Environmental & Operational Hygiene</option>
+                        <option id="foodSafetyAndQuality">Food Safety & Quality Management Systems</option>
+                        <option id="allergenControl">Allergen Control</option>
+                        <option id="auditing">Auditing</option>
+                        <option id="troubleshooting">Troubleshooting</option>
+                        <option id="recruitment">Recruitment</option>
+                        <option id="interimTechnicalManagement">Interim Technical Support</option>
+                        <option id="training">Training</option>
+                        <option id="other">Other</option>                    
+                      </select>
+                    </div>
                   <div class="form-group">
                     <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                     <div class="validation"></div>
                   </div>
-                  <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+                  <div class="text-center"><button type="submit" title="Send Message" class="btn-services btn-curved btn-blue scrollto mt-3">Send Message</button></div>
                 </form>
               </div>
             </div>
@@ -130,41 +143,17 @@
               <div class="container">
                 <div class="row">
         
-                  <div class="col-lg-4 col-md-6 footer-info">
-                    <h3>Northern Food Services</h3>
-                </div>
-        
-                  <div class="col-lg-2 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About us</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Terms of service</a></li>
-                      <li><a href="#">Privacy policy</a></li>
-                    </ul>
-                  </div>
-        
-                  <div class="col-lg-3 col-md-6 footer-contact">
-                    <h4>Contact Us</h4>
+                  <div class="col-lg-12 col-6 footer-info text-center">
+                    <h1>Northern Food Services</h1>
+                    <h4>Delivering Technical Excellance</h4>
                     <p>
-                      Belfast <br>
-                      FoodServices<br>
-                      NI <br>
-                      <strong>Phone:</strong> +1111111111<br>
-                      <strong>Email:</strong> info@example.com<br>
-                    </p>
-        
-                    <div class="social-links">
-                      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                    </div>
-        
-                  </div>
+                        <strong>Email:</strong> info@example.com<br></p>
+                        <a href=""><i class="fa fa-linkedin" style="color: white"></i></a>
+                </div>
                 </div>
               </div>
             </div>
-          </footer><!-- #footer -->
+          </footer>
         
           <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
           <!-- Uncomment below i you want to use a preloader -->
@@ -184,6 +173,39 @@
           <script src="lib/lightbox/js/lightbox.min.js"></script>
           <!-- Contact Form JavaScript File -->
           <script src="contactform/contactform.js"></script>
+            <script>
+              $(document).ready(function() {
+                var select = GetUrlParameter("select");
+                $("#" + select).attr("selected", "");
+              });
+              
+              function GetUrlParameter(name) {
+                  var value;
+                  $.each(window.location.search.slice(1).split("&"), function (i, kvp) {
+                      var values = kvp.split("=");
+                      if (name === values[0]) {
+                          value = values[1] ? values[1] : values[0];
+                          return false;
+                      }
+                  });
+                  return value;
+              }
+          </script>
+          <script>
+              window.onscroll = function() {
+                growShrinkLogo()
+              };
+              
+              function growShrinkLogo() {
+                var Logo = document.getElementById("logo-nfs")
+                console.log("Logo");
+                if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+                  Logo.style.maxHeight = '130px';
+                } else {
+                  Logo.style.maxHeight = '150px';
+                }
+              }
+              </script>
         
           <!-- Template Main Javascript File -->
           <script src="js/main.js"></script>

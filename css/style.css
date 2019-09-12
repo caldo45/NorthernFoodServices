@@ -9,9 +9,24 @@
 # General
 --------------------------------------------------------------*/
 
+
+.text-top-box{
+  padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    max-height: 150px;
+    margin-bottom: 30px;
+    height: 80%;
+    text-align: left;
+    color: white!important;
+    background-color: #2f3e69;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 body {
   background: #fff;
-  color: #444;
+  color: #2f3e69;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -61,6 +76,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   transition: background 0.5s;
+  border: 2px white solid;
   z-index: 11;
 }
 
@@ -136,7 +152,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-pages {
-  height: 60px;
+  height: 80px;
   padding: 10px 0;
 }
 
@@ -159,7 +175,6 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 7px 0;
-  max-height: 26px;
 }
 
 .main-pages {
@@ -167,7 +182,7 @@ h6 {
 }
 
 .header-logo{
-  min-height: 150px;
+  max-height: 150px;
   position: fixed;
   top: 0;
 }
@@ -203,11 +218,22 @@ h6 {
   font-weight: 700;
 }
 
-#intro .intro-info h2 span {
+/* #intro .intro-info h2 span {
   color: #2f3e69;
   text-decoration: underline;
-}
+} */
 
+.btn-curved{
+  font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 0 20px 20px 0;
+}
 #intro .intro-info .btn-get-started,
 #intro .intro-info .btn-services {
   font-family: "Montserrat", sans-serif;
@@ -215,7 +241,7 @@ h6 {
   font-weight: 600;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 32px;
+  padding: 10px 20px;
   border-radius: 50px;
   transition: 0.5s;
   margin: 0 20px 20px 0;
@@ -226,6 +252,33 @@ h6 {
   background: #2f3e69;
   border: 2px solid #2f3e69;
   color: #fff;
+}
+
+.blue{
+  color: #2f3e69!important;
+}
+
+.text-top-services{
+  padding: 20px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.fa-ul li{
+  margin-bottom: 10px;
+}
+.background-blue{
+background-color: #2f3e69;
+color:white;
+}
+
+.strong-bullets{
+  font-weight: 700;
+ margin-bottom: 10px!important;
 }
 
 #intro .intro-info .btn-get-started:hover {
@@ -653,7 +706,12 @@ h6 {
 
 #why-us {
   padding: 60px 0;
-  background: #004a99;
+}
+
+.contact-form-input{
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
 }
 
 #why-us .section-header h3,
@@ -1205,11 +1263,11 @@ h6 {
 
 #footer .footer-top {
   background: #004a99;
-  padding: 60px 0 30px 0;
+  padding: 30px 0 30px 0;
 }
 
 #footer .footer-top .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1288,7 +1346,7 @@ h6 {
 }
 
 #footer .footer-top .footer-contact {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1296,7 +1354,7 @@ h6 {
 }
 
 #footer .footer-top .footer-newsletter {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #footer .footer-top .footer-newsletter input[type="email"] {
