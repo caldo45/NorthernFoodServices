@@ -92,19 +92,30 @@ jQuery(document).ready(function($) {
     else var str = $(this).serialize();
     var action = $(this).attr('action');
     if( ! action ) {
-      action = 'contactform/contactform.php';
+      action = './php/contact.php';
     }
+    var name = $("input#name").val();
+    var email = $("input#email").val();
+    var message = $("textarea#message").val();
+    console.log(name, email, message);
     $.ajax({
       type: "POST",
       url: action,
-      data: str,
+      data: {
+        name: name,
+        email: email,
+        message: message
+      },
       success: function(msg) {
+        console.log(msg);
         // alert(msg);
-        if (msg == 'OK') {
+        if (msg == 'ok') {
+          console.log(true);
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
         } else {
+          console.log(false);          
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show");
           $('#errormessage').html(msg);
